@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+mkdir $1;
+cd $1;
+touch index.html;
+echo 'Creating a new project';
+echo '<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,4 +13,13 @@
 <body>
     
 </body>
-</html>
+</html>' > index.html;
+mkdir css;
+cd css;
+touch style.css;
+cd ..;
+mkdir js;
+cd js;
+touch app.js;
+cd ..;
+echo 'all done!';
