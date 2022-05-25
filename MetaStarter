@@ -26,6 +26,7 @@ echo '<!DOCTYPE html>
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://">
 
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
