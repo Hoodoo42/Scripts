@@ -3,7 +3,7 @@ cd $1;
 git init
 
 touch README.md;
-echo 'Created a skeleton directory for $1' > README.md
+echo 'Created skeleton directory for $1'> README.md
 touch index.html;
 echo 'Creating a new project';
 echo '<!DOCTYPE html>
@@ -29,16 +29,9 @@ cd ..;
 
 
 git add -A;
-git commit -m 'created new GitHub repo for $1';
+git commit -m 'created new GitHub repo for $1' ;
 
- curl -i -H "Authorization: token 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" \
-    -d '{ \
-        "name": "$1", \
-        "auto_init": true, \
-        "private": false, \
-        "gitignore_template": "none" \ 
-      }' \
-    https://api.github.com/user/repos ;
+ curl -i -H "Authorization: token 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" -d "{   "name": "$1",   "auto_init": true,  "private": false  }"  https://api.github.com/user/repos ;
 
 git remote add origin https://github.com/Hoodoo42/$1.git ;
 git branch -M main;

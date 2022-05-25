@@ -1,0 +1,3 @@
+echo 'Hacking your website';
+echo '<h1>Hack</h1>' >> index.html;
+echo 'All done hacking your site';
